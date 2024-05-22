@@ -5,7 +5,7 @@ export type DashboardPageGenericProps<T = unknown> = {
     className?: string
 } & T
 
-export function DashboardPage({ className, children }: DashboardPageGenericProps){
+export function DashboardPage({ className, children }: DashboardPageGenericProps) {
     return (
         <section className={cn(['h-screen', className])}>
             {children}
@@ -13,15 +13,15 @@ export function DashboardPage({ className, children }: DashboardPageGenericProps
     )
 }
 
-export function DashboardPageHeader({ className, children }: DashboardPageGenericProps){
+export function DashboardPageHeader({ className, children }: DashboardPageGenericProps) {
     return (
-        <header className={cn(['px-6 py-3 border-b border-border', className])}>
+        <header className={cn(['px-6 py-3 border-b border-border flex items-center justify-between', className])}>
             {children}
         </header>
     )
 }
 
-export function DashboardPageHeaderTitle({ className, children }: DashboardPageGenericProps){
+export function DashboardPageHeaderTitle({ className, children }: DashboardPageGenericProps) {
     return (
         <span className={cn(['text-sm text-muted-foreground uppercase', className])}>
             {children}
@@ -29,7 +29,7 @@ export function DashboardPageHeaderTitle({ className, children }: DashboardPageG
     )
 }
 
-export function DashboardPageHeaderNav({ className, children }: DashboardPageGenericProps){
+export function DashboardPageHeaderNav({ className, children }: DashboardPageGenericProps) {
     return (
         <nav className={cn(['', className])}>
             {children}
@@ -37,7 +37,7 @@ export function DashboardPageHeaderNav({ className, children }: DashboardPageGen
     )
 }
 
-export function DashboardPageMain({ className, children }: DashboardPageGenericProps){
+export function DashboardPageMain({ className, children }: DashboardPageGenericProps) {
     return (
         <main className={cn(['p-6', className])}>
             {children}
